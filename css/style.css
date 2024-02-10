@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+  --Green: hsl(75, 94%, 57%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-color: var(--Off-Black);
+}
+
+main {
+  background-color: var(--Dark-Grey);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 24rem;
+  height: 38rem;
+  justify-content: space-evenly;
+}
+
+main .card-header .image img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+main .card-info .name {
+  color: var(--White);
+  margin-bottom: 15px;
+}
+
+main .card-info .address {
+  color: var(--Green);
+}
+
+main .job p {
+  color: var(--White);
+  font-size: 14px;
+}
+
+main .card-links {
+  width: calc(100% - 60px);
+}
+
+main .card-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main .card-links ul li a {
+  display: block;
+  border-radius: 10px;
+  color: var(--White);
+  background-color: var(--Grey);
+  padding: 15px 0px;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+main .card-links ul li a:hover {
+  background-color: var(--Green);
+  color: var(--Off-Black);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
