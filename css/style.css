@@ -88,6 +88,7 @@ main .card-links ul li a:hover {
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: white;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
